@@ -1,7 +1,7 @@
 class Solution {
     public int longestCommonSubsequence(String text1, String text2) {
       //most common problem Longest Common Subsequence
-      //Most common problem Longest Subsequence
+      //Most common problem Longest Increasing Subsequence//Lis and Lcs are most common problems
       //longest ,maximum uses dynamic Programming
       char[] str1 = text1.toCharArray();
       char[] str2 = text2.toCharArray();
