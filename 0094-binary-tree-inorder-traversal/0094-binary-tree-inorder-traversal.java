@@ -29,17 +29,3 @@ class Solution {
     helper(node.right,list);
     }
 }
-//public void inOrder(TreeNode root){
-//    if(root==null){
-//        return ;// Kushagra Gupta Method for recursive Solution
-//    }
-//    inOrder(root.left);
-//    System.out.print(root.data + " ");
-//   inOrder(root.right);
-//}
-
-/**
-* if(root)
-*
-*
-**/
