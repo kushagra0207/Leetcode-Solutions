@@ -15,17 +15,19 @@
  */
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        helper(root,res);
-        return res;
-        
+        ArrayList<Integer> arr = new ArrayList<>();
+        Kushagra(root,arr);
+        return arr;
+    
     }
-    private void helper(TreeNode node, List<Integer> list){
-        if(node==null){
-        return ;
-    }
-    helper(node.left,list);
-    list.add(node.val);
-    helper(node.right,list);
+    
+    
+    
+    public static void Kushagra(TreeNode root, List arr){
+        if(root!=null){
+            Kushagra(root.left,arr);
+            arr.add(root.val);
+            Kushagra(root.right,arr);
+        }
     }
 }
