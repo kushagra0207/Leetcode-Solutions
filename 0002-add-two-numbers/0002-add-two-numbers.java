@@ -11,6 +11,14 @@
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         
+        
+        // writer kushagra gupta
+        
+        // Simple linked lIst question to involve
+        
+        // using map and hashmap also we can do.
+        
+        // No need to worry and check.
         ListNode temp = new ListNode();
         ListNode curr = temp;
         
