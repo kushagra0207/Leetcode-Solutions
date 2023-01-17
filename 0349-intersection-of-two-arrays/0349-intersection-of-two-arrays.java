@@ -9,7 +9,8 @@ class Solution {
 
     int [] output = new int[set1.size()];
     int idx = 0;
-    for (int s : set1) output[idx++] = s;
+    for (int s : set1){ output[idx] = s;
+                       idx++;}
     return output;
     }
 }
