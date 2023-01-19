@@ -49,7 +49,7 @@ class Solution {
         
         int carry =0;
         
-        ListNode temp = new ListNode();
+        ListNode temp = new ListNode(0);
         ListNode curr=temp;
         while(l1!=null || l2!=null){
             int a = (l1!=null)?l1.val:0;
