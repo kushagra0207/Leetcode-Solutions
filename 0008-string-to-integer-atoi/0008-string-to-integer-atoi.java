@@ -1,5 +1,13 @@
 class Solution {
     public int myAtoi(String s) {
+        
+        // Kushagra Gupta Date -2 Feb 2023
+        
+        
+        /*
+        
+        Done by 2 methods...
+        */
         s = s.strip();
     if (s.isEmpty())
       return 0;
