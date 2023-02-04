@@ -7,7 +7,7 @@ class Solution {
         }
         for(char ch : stones.toCharArray()){
             if(hs.contains(ch)){
-                count+=1l;
+                count+=1;
             }
         }
         return count;
