@@ -18,12 +18,16 @@ class Solution {
         ArrayList<Integer> arr = new ArrayList<>();
         Kushagra(root,arr);
         return arr;
+        
     
     }
     
     
     
     public static void Kushagra(TreeNode root, List arr){
+        if(root == null){
+            return;
+        }
         if(root!=null){
             Kushagra(root.left,arr);
             arr.add(root.val);
