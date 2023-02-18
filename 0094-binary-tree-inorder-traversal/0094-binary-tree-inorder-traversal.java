@@ -15,23 +15,20 @@
  */
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-        ArrayList<Integer> arr = new ArrayList<>();
-        Kushagra(root,arr);
-        return arr;
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        kushagra(root,list);
+        return list;
         
-    
     }
-    
-    
-    
-    public static void Kushagra(TreeNode root, List arr){
-        if(root == null){
-            return;
-        }
-        if(root!=null){
-            Kushagra(root.left,arr);
-            arr.add(root.val);
-            Kushagra(root.right,arr);
-        }
+    public static void kushagra(TreeNode root,ArrayList<Integer> list){
+      if(root==null){
+        return;
+      }
+      
+        kushagra(root.left,list);
+        list.add(root.val);
+        kushagra(root.right,list);
+      
+
     }
 }
