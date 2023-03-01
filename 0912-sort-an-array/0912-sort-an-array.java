@@ -10,14 +10,14 @@ class Solution {
         // Space complexity for all cases - O(n)
         
         
-        mergeSort(nums,0,nums.length-1);
+        mainMergeSort(nums,0,nums.length-1);
         return nums;
     }
     
     
     
     
-    public static void mergeFun(int[] arr, int l, int m, int r) {
+    public static void justMerge(int[] arr, int l, int m, int r) {
         int n1 = m + 1 - l;
         int n2 = r - m;
         int[] left = new int[n1];
@@ -37,12 +37,12 @@ class Solution {
         }
     }
 
-    public static void mergeSort(int[] arr, int low, int high) {
+    public static void mainMergeSort(int[] arr, int low, int high) {
         if (low < high) {
             int middle = (high - low) / 2 + low;
-            mergeSort(arr, low, middle);
-            mergeSort(arr, middle + 1, high);
-            mergeFun(arr, low, middle, high);
+            mainMergeSort(arr, low, middle);
+            mainMergeSort(arr, middle + 1, high);
+            justMerge(arr, low, middle, high);
         }
     }
 }
